@@ -2,6 +2,16 @@ from data_set import df_result
 
 from sklearn.linear_model import LinearRegression
 
+#Regressão Linear entre Idade e Salário:
+
+X = df_result[['Idade']] # variável independente
+y = df_result['Salario'] # variável dependente
+
+modelo = LinearRegression()
+modelo.fit(X, y)
+
+print(f'Coeficiente: {modelo.coef_}, Interceptação: {modelo.intercept_}')
+
 
 
 """
