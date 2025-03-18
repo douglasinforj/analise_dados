@@ -24,5 +24,5 @@ df = pd.DataFrame({
 })
 
 # Mostrando as primeiras linhas
-df_result = df.head(10000)
+df_result = df.head(10000).copy()     #tratando dataset separado
 print(df_result)
