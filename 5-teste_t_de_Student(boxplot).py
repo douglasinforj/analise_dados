@@ -1,18 +1,24 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
 from data_set import df_result
 
-from scipy import stats
+plt.figure(figsize=(10, 6))
+sns.boxplot(x='Cargo', y='Salario', data=df_result, palette="coolwarm")
+
+plt.title('Comparação de Salários', fontsize=14, fontweight='bold')
+plt.xlabel('Cargo', fontsize=12)
+plt.ylabel('Salário (R$)', fontsize=12)
+plt.grid(axis='y', linestyle='--', alpha=0.6)
+plt.show()
 
 
-# Comparando salários entre Analistas e Gerentes
 
-analistas = df_result[df_result['Cargo'] == 'Analista']['Salario']
-gerentes = df_result[df_result['Cargo'] == 'Gerente']['Salario']
-
-
-t_stat, p_value = stats.ttest_ind(analistas, gerentes)
-
-print(f'T-statistic: {t_stat}, p-value: {p_value}')
-
+"""
+O que o Boxplot vai mostrar?
+- Diferença de mediana entre Analistas e Gerentes.
+- Distribuição dos salários e presença de outliers.
+- Se há grande variação salarial dentro de cada cargo.
+"""
 
 """
 O teste t de Student é uma ferramenta estatística que permite comparar as médias de dois grupos.
