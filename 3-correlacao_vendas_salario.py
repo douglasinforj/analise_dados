@@ -18,3 +18,10 @@ plt.xlabel('Número de Vendas', fontsize=12)
 plt.ylabel('Salário (R$)', fontsize=12)
 plt.grid(True, linestyle='--', alpha=0.6)
 plt.show()
+
+
+"""
+Correlação em dados é uma medida estatística que indica a relação entre duas ou mais variáveis. 
+Ela é utilizada para identificar e quantificar a associação entre as variáveis, e pode ser positiva, negativa ou inexistente. 
+
+"""
