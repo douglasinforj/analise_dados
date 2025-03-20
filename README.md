@@ -106,5 +106,24 @@ O boxplot (ou diagrama de caixa) é uma ferramenta estatística visual que resum
   - Diferença clara e objetiva das médias salariais.
   - Fácil de interpretar, sem necessidade de análise estatística complexa.
 
+## Regressão Linear (Relação de idade e o salário)
+
+![Grafico Barras](assets/regrassao_linear(salarios_idade).png)
+- O que está no gráfico?
+  - Pontos azuis (scatterplot): Representam os dados reais do DataFrame (df_result).
+    - Cada ponto azul é um funcionário, com sua idade no eixo X e seu salário no eixo Y.
+    - Se houver uma tendência clara (exemplo: salários aumentando com a idade), isso indica uma possível relação entre as variáveis.
+
+  - Linha vermelha (Regressão Linear): Representa a linha de melhor ajuste encontrada pelo modelo de regressão linear.
+    - Essa linha tenta prever o salário com base na idade.
+    - Se for inclinada para cima, sugere que salários aumentam com a idade.
+    - Se for inclinada para baixo, sugere que salários diminuem com a idade.
+
+- Como interpretar os resultados?
+    - Se a linha vermelha estiver inclinada positivamente, então quanto mais velho, maior o salário esperado.
+    - Se a linha for horizontal, então não há relação significativa entre idade e salário.
+    - Se for inclinada negativamente, pode indicar que funcionários mais jovens têm salários mais altos, o que pode acontecer em setores onde novas contratações têm salários maiores.
+
+
 
 
