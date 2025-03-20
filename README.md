@@ -40,15 +40,44 @@ Este projeto visa:
 ### Media - Mediana - Moda
 ![Média - Mediana - Moda](assets/media_mediana_moda.png)
 
- - Histograma: mostra a distribuição dos salários.
- - Linha Vermelha: representa a média dos salários.
- - Linhas Verdes: indicam um desvio padrão acima e abaixo da média.
+ - Histograma: mostra a distribuição dos salários e inclui as linhas para a média, mediana e moda.
+ - Boxplot: ajuda a visualizar possíveis outliers e a distribuição dos dados.
 
 ### Desvio_Padrão e Variancia
 ![Desvio Padrão e Variancia](assets/desvio_padrao_e_variancia.png)
 
+ - Histograma: mostra a distribuição dos salários.
+ - Linha Vermelha: representa a média dos salários.
+ - Linhas Verdes: indicam um desvio padrão acima e abaixo da média.
+
 ### Correlação vendas e salário
 ![Correlação de Vendas e Salários](assets/correlacao_vendas_salario.png)
 
-### Correlação vendas e salário
+- Gráfico de dispersão (scatter plot): Mostra a relação entre número de vendas e salário.
+- Linha de tendência (regressão): Adiciona uma linha vermelha para visualizar a tendência.
+- Correlação no título: O valor da correlação é exibido diretamente no gráfico.
+- Transparência nos pontos: Deixa o gráfico mais limpo e profissional.
+
+### CBox Plot de Salário
 ![Correlação de Vendas e Salários](assets/boxplot.png)
+
+
+O boxplot (ou diagrama de caixa) é uma ferramenta estatística visual que resume a distribuição de um conjunto de dados, destacando sua dispersão, mediana, quartis e valores discrepantes (outliers).
+
+1. O que o Boxplot representa?
+O boxplot divide os dados em cinco partes principais:
+
+Mínimo (limite inferior, sem outliers) → O menor valor dentro da faixa aceitável.
+Primeiro quartil (Q1 – 25%) → 25% dos dados estão abaixo desse valor.
+Mediana (Q2 – 50%) → O valor central da distribuição.
+Terceiro quartil (Q3 – 75%) → 75% dos dados estão abaixo desse valor.
+Máximo (limite superior, sem outliers) → O maior valor dentro da faixa aceitável.
+
+Valores Outliers → São representados por pontos isolados fora dos limites aceitáveis do boxplot. Esses valores são considerados anomalias ou valores extremos da distribuição.
+
+2. Como ler o Boxplot do Salário?
+A "caixa" do gráfico representa a faixa entre o primeiro quartil (Q1 - 25%) e o terceiro quartil (Q3 - 75%).
+A linha dentro da caixa representa a mediana (Q2 - 50%), ou seja, o valor central da distribuição.
+As "linhas" (bigodes) que saem da caixa indicam o intervalo esperado dos dados, sem considerar os valores discrepantes.
+Os pontos fora da caixa (outliers) indicam salários muito baixos ou muito altos, que fogem da distribuição normal dos dados.
+
