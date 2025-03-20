@@ -1,14 +1,37 @@
 from data_set import df_result
+import seaborn as sns
+import matplotlib.pyplot as plt 
 
-
-
-# Desvio Padrão e Variância:
+# Estatistica Descritiva
 
 desvio_padrao_salario = df_result['Salario'].std()
 variancia_salario = df_result['Salario'].var()
 
 print(f'Desvio Padrão Salário: {desvio_padrao_salario}')
 print(f'Variancia Salário: {variancia_salario}')
+
+
+#Criando o gráfico
+plt.figure(figsize=(12, 5))
+
+
+# Histograma com desvio padrão
+sns.histplot(df_result['Salario'], bins=30, kde=True, color='blue')
+
+#Adicionando linhas da média e faizas de desvio padrão
+media_salario = df_result['Salario'].mean()
+plt.axvline(media_salario, color='red', linestyle='dashed', linewidth=2, label='Média')
+plt.axvline(media_salario + desvio_padrao_salario, color='green', linestyle='dashed', linewidth=2, label='+1 Desvio Padrão')
+plt.axvline(media_salario - desvio_padrao_salario, color='green', linestyle='dashed', linewidth=2, label='-1 Desvio Padrão')
+
+plt.title('Distribuição de Salários com Desvio Padrão')
+plt.xlabel('Salário')
+plt.ylabel('Frequência')
+plt.legend()
+plt.show()
+
+
+
 
 
 """
