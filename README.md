@@ -46,3 +46,9 @@ Este projeto visa:
 
 ### Desvio_Padrão e Variancia
 ![Desvio Padrão e Variancia](assets/desvio_padrao_e_variancia.png)
+
+### Correlação vendas e salário
+![Correlação de Vendas e Salários](assets/correlacao_vendas_salario.png)
+
+### Correlação vendas e salário
+![Correlação de Vendas e Salários](assets/boxplot.png)
